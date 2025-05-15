@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(142.0, 118.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(265.0, 110.0)" />
+		<node id="2" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(255.0, 204.0)" />
+		<node id="3" name="Corpus Viewer" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer" position="(385.0, 205.0)" />
+		<node id="4" name="Create Corpus" qualified_name="orangecontrib.text.widgets.owcreatecorpus.OWCreateCorpus" project_name="Orange3-Text" version="" title="Create Corpus" position="(153.0, 388.0)" />
+		<node id="5" name="Corpus Viewer" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer (1)" position="(292.0, 438.0)" />
+		<node id="6" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(282.0, 535.0)" />
+		<node id="7" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(292.0, 343.0)" />
+		<node id="8" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud (1)" position="(447.0, 345.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="3" source_node_id="4" sink_node_id="5" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="4" source_node_id="4" sink_node_id="6" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="5" source_node_id="4" sink_node_id="7" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="6" source_node_id="7" sink_node_id="8" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'domain': None, 'filter_hint': None, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe1\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'language': 'English', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xff\x00\x00\x00\x80\x00\x00\x05\x00\x00\x00\x02\x92\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01\x00\x00\x00\x00\x9e\x00\x00\x04\xff\x00\x00\x02\x91', 'selected_id': 'mtsamples.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 2}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02K\x00\x00\x00H\x00\x00\x05l\x00\x00\x02Z\x00\x00\x02L\x00\x00\x00f\x00\x00\x05k\x00\x00\x02Y\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02L\x00\x00\x00f\x00\x00\x05k\x00\x00\x02Y', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASV0gMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBFi
+b29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAiYAAADfAAAD2QAAAjMAAAInAAAA/QAA
+A9gAAAIyAAAAAAAAAAAGAAAAAicAAAD9AAAD2AAAAjKUjAtfX3ZlcnNpb25fX5RLAowQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwCZW6USv7///+GlIwOdGl0bGVfdmFyaWFibGWUjAtzYW1w
+bGVfbmFtZZRLZ4aUjAp1c2VkX2F0dHJzlF2UjA10cmFuc2NyaXB0aW9ulEtnhpRhSv3///+GlGgL
+SwJ1jAphdHRyaWJ1dGVzlH2UjBFtZWRpY2FsX3NwZWNpYWx0eZRLAXOMBW1ldGFzlH2UKIwLZGVz
+Y3JpcHRpb26USwOMC3NhbXBsZV9uYW1llEsDjA10cmFuc2NyaXB0aW9ulEsDjAhrZXl3b3Jkc5RL
+A3WMDmRvY3VtZW50c19oYXNolIoRYj0xlefp3k0I6eTeoALWpQBoFU51YmgQKYGUfZQoaBN9lCho
+FYwCZW6USv7///+GlGgYjAVUaXRsZZRLZ4aUaBtdlGgvS2eGlGFK/f///4aUaAtLAnVoIH2UjAhj
+YXRlZ29yeZRLAXNoI32UKIwFVGl0bGWUSwOMB0NvbnRlbnSUSwN1aCmKECeq1vsjiAMqRT1jNEcq
+wA1oFU51YmgQKYGUfZQoaBN9lChoFYwCcm+USv7///+GlGgYjARmb29klEtnhpRoG12UaD5LZ4aU
+YUr9////hpRoC0sCdWggfZSMCGNhdGVnb3J5lEsBc2gjfZRoPksDc2gpihESbe+HIu7jYAtBI9aE
+HhucAGgVTnViaBApgZR9lChoE32UKGgVjAJlbpRK/v///4aUaBhOSv7///+GlGgbXZSMBFRleHSU
+S2eGlGFK/f///4aUaAtLAnVoIH2UjAhDYXRlZ29yeZRLAXNoI32UaE1LA3NoKYoRrDUHBBm0CEu3
+uuR22q6RlwBoFYwCZW6UdWJldS4=
+</properties>
+		<properties node_id="3" format="pickle">gASV2QMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAQYAAABaAAAE+QAAArgAAAEHAAAAeAAABPgAAAK3
+AAAAAAAAAAAGAAAAAQcAAAB4AAAE+AAAAreUjBJzZWxlY3RlZF9kb2N1bWVudHOUj5QoSwCQjAtz
+aG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5n
+ZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEGRpc3BsYXlf
+ZmVhdHVyZXOUXZQojBFtZWRpY2FsX3NwZWNpYWx0eZRLZYaUjAtkZXNjcmlwdGlvbpRLZ4aUjAtz
+YW1wbGVfbmFtZZRLZ4aUjA10cmFuc2NyaXB0aW9ulEtnhpSMCGtleXdvcmRzlEtnhpRlSv3///+G
+lIwNcmVnZXhwX2ZpbHRlcpSMAJRK/v///4aUjA9zZWFyY2hfZmVhdHVyZXOUXZQoaBRLZYaUaBZL
+Z4aUaBhLZ4aUaBpLZ4aUaBxLZ4aUZUr9////hpRoCEsCdYwKYXR0cmlidXRlc5R9lIwRbWVkaWNh
+bF9zcGVjaWFsdHmUSwFzjAVtZXRhc5R9lCiMC2Rlc2NyaXB0aW9ulEsDjAtzYW1wbGVfbmFtZZRL
+A4wNdHJhbnNjcmlwdGlvbpRLA4wIa2V5d29yZHOUSwN1dWJoDSmBlH2UKGgQfZQoaBJdlCiMCGNh
+dGVnb3J5lEtlhpSMBVRpdGxllEtnhpSMB0NvbnRlbnSUS2eGlGVK/f///4aUaB9oIEr+////hpRo
+Il2UKGg3S2WGlGg5S2eGlGg7S2eGlGVK/f///4aUaAhLAnVoKn2UjAhjYXRlZ29yeZRLAXNoLX2U
+KIwFVGl0bGWUSwOMB0NvbnRlbnSUSwN1dWJoDSmBlH2UKGgQfZQoaBJdlCiMCGNhdGVnb3J5lEtl
+hpSMBGZvb2SUS2eGlGVK/f///4aUaB9oIEr+////hpRoIl2UKGhNS2WGlGhPS2eGlGVK/f///4aU
+aAhLAnVoKn2UaE1LAXNoLX2UaE9LA3N1YmgNKYGUfZQoaBB9lChoEl2UKIwIQ2F0ZWdvcnmUS2WG
+lIwEVGV4dJRLZ4aUZUr9////hpRoH2ggSv7///+GlGgiXZQoaF1LZYaUaF9LZ4aUZUr9////hpRo
+CEsCdWgqfZRoXUsBc2gtfZRoX0sDc3ViZXUu
+</properties>
+		<properties node_id="4" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'language': 'en', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03L\x00\x00\x00d\x00\x00\x05\xa5\x00\x00\x02\xc2\x00\x00\x03M\x00\x00\x00\x82\x00\x00\x05\xa4\x00\x00\x02\xc1\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x03M\x00\x00\x00\x82\x00\x00\x05\xa4\x00\x00\x02\xc1', 'texts': [('Importance of Exercise', 'Regular exercise is essential for maintaining good health. It helps in weight management, improves heart health, and enhances mental well-being. People who exercise regularly experience better mood and reduced stress levels. Physical activities such as running, swimming, and yoga contribute to overall fitness.'), ('Renewable Energy Sources', 'Renewable energy is derived from natural sources such as sunlight, wind, and water. Solar panels convert sunlight into electricity, while wind turbines generate power using wind energy. Unlike fossil fuels, renewable energy is sustainable and environmentally friendly. Governments worldwide are investing in clean energy to reduce carbon emissions.'), ('The Benefits of Reading', 'Reading enhances knowledge and improves vocabulary. It stimulates brain function and strengthens memory. Fiction books improve creativity, while non-fiction books provide valuable information. Developing a reading habit can boost concentration and reduce stress levels.'), ('Climate Change and Its Effects', 'Climate change is a global concern caused by pollution and deforestation. Rising temperatures lead to melting ice caps and extreme weather conditions. Human activities, such as burning fossil fuels, increase greenhouse gas emiss')], '__version__': 2}</properties>
+		<properties node_id="5" format="pickle">gASVsAEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAQYAAABaAAAE+QAAArgAAAEHAAAAeAAABPgAAAK3
+AAAAAAAAAAAGAAAAAQcAAAB4AAAE+AAAAreUjBJzZWxlY3RlZF9kb2N1bWVudHOUj5QoSwCQjAtz
+aG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwQZGlzcGxheV9m
+ZWF0dXJlc5RdlCiMBVRpdGxllEtnhpSMCERvY3VtZW50lEtnhpRlSv3///+GlIwNcmVnZXhwX2Zp
+bHRlcpSMAJRK/v///4aUjA9zZWFyY2hfZmVhdHVyZXOUXZQoaBRLZ4aUaBZLZ4aUZUr9////hpRo
+CEsCdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQoaBRLA2gWSwN1dWJhdS4=
+</properties>
+		<properties node_id="6" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAJ1AAAAMwAABfoAAAJFAAACdgAAAFEAAAX5AAACRAAAAAAAAAAABgAAAAJ2
+AAAAUQAABfkAAAJElIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="7" format="pickle">gASVkQMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAngAAABsAAAFwwAAAn4AAAJ5AAAAigAABcIAAAJ9
+AAAAAAAAAAAGAAAAAnkAAACKAAAFwgAAAn2UjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSGlIwTcHJlcHJvY2Vz
+cy50b2tlbml6ZZR9lIaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19z
+dGFydJRLAYwJZnJlcV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJRHP+HJNAYMZFeM
+CGxhbmd1YWdllIwCZW6UjAdseF9saXN0lF2UjAdseF9wYXRolE6MB21ldGhvZHOUXZRLAGGMCG5f
+dG9rZW5zlEtkjAdwYXR0ZXJulIxbXC58LHw6fDt8IXxcP3xcKHxcKXxcfHxcK3xcJ3xcInzigJh8
+4oCZfOKAnHzigJ18XCd8XOKAmXzigKZ8XC184oCTfOKAlHxcJHwmfFwqfD58PHxcL3xcW3xcXZSM
+CHBvc190YWdzlIwJTk9VTixWRVJClIwHcmVsX2VuZJRHP+zMzMzMzM2MCXJlbF9zdGFydJRHP7mZ
+mZmZmZqMB3N3X2xpc3SUXZSMHm9yYW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2Vu
+dFBhdGiUk5QpgZR9lCiMB2Fic3BhdGiUjC1DOi9Vc2Vycy9MZW5vdm8vRGVza3RvcC9OZXcgVGV4
+dCBEb2N1bWVudC50eHSUjAZwcmVmaXiUjAdiYXNlZGlylIwHcmVscGF0aJSMFU5ldyBUZXh0IERv
+Y3VtZW50LnR4dJSMBXRpdGxllGgIjAVzaGVldJRoCIwLZmlsZV9mb3JtYXSUTnViYYwHc3dfcGF0
+aJRoKimBlH2UKGgtjC1DOi9Vc2Vycy9MZW5vdm8vRGVza3RvcC9OZXcgVGV4dCBEb2N1bWVudC50
+eHSUaC9oMGgxjBVOZXcgVGV4dCBEb2N1bWVudC50eHSUaDNoCGg0aAhoNU51YnWGlGV1jAtfX3Zl
+cnNpb25fX5RLBHUu
+</properties>
+		<properties node_id="8" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAJtAAAAXAAABfIAAAJuAAACbgAAAHoAAAXxAAACbQAAAAAAAAAABgAAAAJu
+AAAAegAABfEAAAJtlIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
